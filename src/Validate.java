@@ -12,11 +12,9 @@ public class Validate {
   }
 
   private static boolean minor(int age) {
-    if (age > 17) {
-      return false;
-    }
-
-    return true;
+    if(age <=17 && age > 0)
+      return true;
+    return false;
   }
 
   private static boolean email(String input) {
@@ -43,7 +41,6 @@ public class Validate {
   }
 
   public static boolean isInDomain(String domain, String url) {
-
     if (domain == null || url == null || domain.isEmpty() || url.isEmpty()) {
       return false;
     }
